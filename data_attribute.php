@@ -25,19 +25,24 @@
 	   <?=$output ?>
 	    <p id="fullName"></p>
 	   <p id="result"></p>
+	   
 <script type="text/javascript">
+
   function showTranslation(){
+  
        var srch = document.getElementById("val"),
            selected = srch.options[srch.selectedIndex];
             fullName = document.getElementById("fullName"),
             result = document.getElementById("result");
+            
           // data - attribute
           // see also getAttribute (IE) https://developer.mozilla.org/en-US/docs/Web/API/element.dataset
              dataEst = selected.dataset.est;
-             dataFull = selected.dataset.full
+             dataFull = selected.dataset.full;
+             
          // adding text  
            fullName.innerHTML = dataFull;
-           result.innerHTML = dataEst ; 
+           result.innerHTML = dataEst; 
      
   
   }
